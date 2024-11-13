@@ -62,9 +62,9 @@ The staging area
 Now, let’s try adding some files into the project. Create a couple of
 files.
 
-Let’s create two files named `bob.txt` and `alice.txt`.
+Let’s create two files named `cses.txt` and `opensource.txt`.
 
-    $ touch alice.txt bob.txt
+    $ touch cses.txt opensource.txt
 
 Let’s use a mail analogy.
 
@@ -75,7 +75,7 @@ You finalize the process and record it into the git index by using
 
 Let’s add the files to the staging area
 
-    $ git add alice.txt bob.txt
+    $ git add cses.txt opensource.txt
 
 Committing
 ----------
@@ -110,16 +110,15 @@ involved in each commit. To view more information about a commit, use
 
 You should see something similar to:
 
-    commit 5a1fad96c8584b2c194c229de7e112e4c84e5089
-    Author: kuahyeow 
-    Date:   Sun Jul 17 19:13:42 2011 +1200
+    Author: kevinsun0904 <kevinsun0904@gmail.com>
+    Date:   Tue Nov 12 18:30:18 2024 -0800
 
-        I am adding two new files
+    I am adding two new files
 
-    diff --git a/alice.txt b/alice.txt
+    diff --git a/cses.txt b/cses.txt
     new file mode 100644
     index 0000000..e69de29
-    diff --git a/bob.txt b/bob.txt
+    diff --git a/opensource.txt b/opensource.txt
     new file mode 100644
     index 0000000..e69de29
 
