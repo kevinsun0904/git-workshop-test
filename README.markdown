@@ -132,12 +132,9 @@ In this section, we are going to add more changes, and try to recover
 from mistakes.
 
 Be forewarned, this next step is going to be hard. We will need to add
-some content to alice.txt.
+some content to cses.txt.
 
-Open `alice.txt` and type in your favourite line from a song, or:
-
-e.g. Lorem ipsum Sed ut perspiciatis, unde omnis iste natus error sit
-voluptatem accusantium doloremque laudantium
+Open `cses.txt` and type whatever you want! (e.g. something like "I love open source")
 
 Then **save** the file
 
@@ -148,12 +145,12 @@ useful to see exactly what changes you have done.
 
 You should see something like the following:
 
-    diff --git a/alice.txt b/alice.txt
-    index e69de29..2aedcab 100644
-    --- a/alice.txt
-    +++ b/alice.txt
+    diff --git a/opensource.txt b/opensource.txt
+    index e69de29..7180823 100644
+    --- a/opensource.txt
+    +++ b/opensource.txt
     @@ -0,0 +1 @@
-    +Lorem ipsum Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+    +I love open source
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Help-browser.svg/20px-Help-browser.svg.png)
 Stuck? Ask for help from the workshop staff
@@ -161,10 +158,10 @@ Stuck? Ask for help from the workshop staff
 Staging area again
 ------------------
 
-Now let’s add our modified file, `alice.txt` to the staging area. Do you
+Now let’s add our modified file, `opensource.txt` to the staging area. Do you
 remember how ?
 
-Next, check the `status` of `alice.txt`. Is it in the staging area now?
+Next, check the `status` of `opensource.txt`. Is it in the staging area now?
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Help-browser.svg/20px-Help-browser.svg.png)
 Stuck? Ask for help from the workshop staff
@@ -172,7 +169,7 @@ Stuck? Ask for help from the workshop staff
 Undoing
 -------
 
-Let’s say we did not like putting Lorem ipsum into `alice.txt`. One
+Let’s say we did not like what we put into `opensource.txt`. One
 advantage of a staging area is to enable us to back out before we
 commit - which is a bit harder to back out of. Remembering the mail
 analogy - it’s easier to take mail out of the cardboard box before you
@@ -180,10 +177,10 @@ seal it than after.
 
 Here’s how to back out of the staging area :
 
-    $ git reset HEAD alice.txt
+    $ git reset HEAD opensource.txt
 
     Unstaged changes after reset:
-    M   alice.txt
+    M       opensource.txt
 
 Compare the `git status` now to the git status from the previous
 section. How does it differ?
@@ -201,11 +198,11 @@ Undoing II
 
 Sometimes we did not like what we have done and we wish to go back to
 the last *recorded* state. In this case, we wish to go back to the state
-just before we added the Lorrem ipsum text to `alice.txt`.
+just before we added the Lorrem ipsum text to `opensource.txt`.
 
 To accomplish this, we use `git checkout`, like so:
 
-    $ git checkout alice.txt
+    $ git checkout opensource.txt
 
 You have now un-done your changes. Your file is now empty.
 
@@ -276,7 +273,7 @@ used to switch to the exp1 branch above)
 Now, where’s our `test.txt` file ?
 
     $ ls
-    README.textile  alice.txt   bob.txt     gamow.txt
+    README.textile  opensource.txt   cses.txt     gamow.txt
 
 As you can see the new file you created in the other branch has
 disappeared. Not to worry, it is safely tucked away, and will re-appear
