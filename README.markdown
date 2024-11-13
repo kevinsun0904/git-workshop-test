@@ -134,7 +134,7 @@ from mistakes.
 Be forewarned, this next step is going to be hard. We will need to add
 some content to cses.txt.
 
-Open `cses.txt` and type whatever you want! (e.g. something like "I love open source")
+Open `opensource.txt` and type whatever you want! (e.g. something like "I love open source")
 
 Then **save** the file
 
